@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 1 row consist of 12 size column -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-3 bg-danger">
+                <h1> <i class="fa-solid fa-house"></i> hello</h1>
+            </div>
+    
+            <div class="col-3 bg-success">
+                <h1>hello</h1>
+            </div>
+    
+            <div class="col-3 bg-primary">
+                <h1>hello</h1>
+    
+            </div>
+    
+            <div class="col-3 bg-danger">
+                <h1>hello</h1>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8 bg-success col-sm-6 col-lg-10">
+                <h1>hello</h1>
+            </div>
+
+            <div class="col-md-4 bg-secondary col-sm-6 col-lg-2">
+                <h1>hello</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- form validation -->
+    <section class="container mt-5">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- scrollspy -->
+    <section class="container border border-secondary-subtle border border-bottom-0">
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eaque officiis quo quod saepe alias non atque reprehenderit aspernatur repudiandae, accusamus ad minima, rem eos facere, maxime distinctio aut vitae blanditiis. Velit consequatur aliquam vero ad, eaque ex autem. Officia consequuntur sequi ut! Officia totam recusandae placeat aperiam rem aliquid.
+                </p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit impedit maxime soluta. Modi voluptates voluptatum explicabo reiciendis a ipsam beatae quam eos quidem officia impedit dolorum quaerat temporibus, ullam tempore totam quos quisquam aut laudantium. Sint, dolore unde. A cum vel officiis neque nostrum, asperiores beatae ea rerum eius!</p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo deserunt, vel tenetur, iste placeat adipisci provident expedita ipsa mollitia, ea dolores? Vero placeat, debitis exercitationem corrupti quae autem impedit facilis maxime tenetur eos, doloremque et magni aut deleniti iste mollitia eveniet tempora magnam dignissimos error vel, fugiat minima blanditiis?</p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam deserunt voluptatem impedit repudiandae dicta dolor atque et! Sapiente in nostrum consequatur quidem illum sit omnis explicabo dolore. Nostrum, quod perferendis quos ipsam natus culpa magnam possimus odit! Modi, quam. Accusamus voluptates voluptas culpa velit repudiandae consectetur amet doloribus magnam!</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- .alert -->
+     <!-- position for 
+      left -> start
+      right ->end
+        are
+       -->
+    <div id="liveAlertPlaceholder" class="w-25 position-absolute end-0" ></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    
+// validation code for form
+function form() {
+  'use strict'
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+}
+form()
+
+// code for alert
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+    </script>
+</body>
+</html>

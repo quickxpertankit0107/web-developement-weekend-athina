@@ -1,0 +1,51 @@
+/* custom width for carousel start */
+.sml-sld{
+    width: 400px;
+    /* dont apply height it will only accept width */
+}
+
+.sml-sld .carousel-inner {
+    height: 100%; 
+}
+
+.sml-sld .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+/* custom width for carousel ends */
+
+/* custom height for button start */
+.cus-btn, .cus-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.cus-btn{
+    height: 40px;
+}
+/* --------------------------------------------------------------- */
+.cus-btn2, .cus-btn2 {
+    top: 10px;
+    /* transform: translateY(-50%); */
+    z-index: 1;
+    position: relative;
+}
+
+.cus-btn2{
+    height: 40px;
+    background-color: rgb(3, 19, 19);
+    border-radius: 20px;
+}
+/* --------------------------------------------------------------- */
+.arrow-out{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+/* --------------------------------------------------------------- */
+.arrow-out-idicator{
+    margin-bottom: 3.5rem;
+}
+/* custom height for button end */
+

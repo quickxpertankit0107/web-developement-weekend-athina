@@ -1,0 +1,44 @@
+The <marquee> tag is a container tag of HTML that is implemented for creating scrollable text or images within a web page
+ from either left to right or vice versa, or top to bottom or vice versa. 
+But this tag has been deprecated in the new version of HTML, i.e., HTML 5
+
+width--->	provides the width or breadth of a marquee. For example width="10" or width="20%"
+height--->	provides the height or length of a marquee. For example height="20" or height="30%"
+direction--->	provides the direction or way in which your marquee will allow you to scroll. The value of this attribute can be: left, right, up, or down
+scrolldelay--->	provides a feature whose value will be used for delaying each jump.
+scrollamount--->	provides value for speeding the marquee feature
+behavior--->	provides the scrolling type in a marquee. That scrolling can be like sliding, scrolling, or alternate
+loop--->	provides how many times the marquee will loop
+
+<marquee width="60%" direction="up" height="100px">
+This is a sample scrolling text that has scrolls in the upper direction.
+</marquee>
+
+<marquee width="60%" direction="down" height="100px">
+This is a sample scrolling text that has scrolls texts to down.
+</marquee>
+
+<marquee width="60%" direction="right" height="100px">
+This is a sample scrolling text that has scrolls texts to the right.
+</marquee>
+
+<marquee width="60%" direction="left" height="100px">
+This is a sample scrolling text that has scrolls texts to the left.
+</marquee>
+
+<marquee behavior="scroll" direction="up" scrollamount="1">Slow Scrolling</marquee>
+<marquee behavior="alternate" direction="right" scrollamount="12">Little Fast Scrolling</marquee>
+<marquee behavior="slide" direction="left" scrollamount="20">Fast Scrolling</marquee>
+<marquee behavior="scroll" direction="down" scrollamount="50">Very Fast Scrolling</marquee>
+<marquee width="100px" behavior="scroll" loop="2" direction="right">hello</marquee>
+<marquee width="100px" behavior="scroll" loop="2" direction="right" scrolldelay="1000">delay</marquee>
+
+<video width="320" height="240" controls muted autoplay>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/mp3">
+</audio>.
+
+iframe

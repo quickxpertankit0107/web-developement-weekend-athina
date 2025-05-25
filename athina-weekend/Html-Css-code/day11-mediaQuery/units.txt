@@ -1,0 +1,4 @@
+px --> pixels
+vh --> viewportheight
+% ---> distributes ur web page according to given percentage(%) unit
+fr --> fraction only used in grid 

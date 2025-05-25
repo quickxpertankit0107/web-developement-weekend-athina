@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+    /* there are various types of pseudo classes in css */
+    /* hover */
+    span:hover{
+        color: rgb(90, 60, 148);
+    }
+
+    /* nth:child */
+    li:nth-child(1){
+        background-color: aqua;
+    }
+
+    li:nth-last-child(1){
+        background-color: rgb(69, 164, 121);
+    }
+    /*placeholder  */
+    ::placeholder{
+        color: red;
+    }
+
+    /* it will remove border */
+
+    input:focus{
+        outline: none;
+    }
+    .para::before{
+        /* with content */
+        content: 'hello i am before css';
+    }
+
+    .para::after{
+        /* with content */
+        content: 'hello i am after css';
+    }
+
+    .para1::before{
+        /* content with empty then u should use display block */
+        content: '';
+        border-top: 2px solid red;
+        display: block;
+        width: 30px;
+    }
+    </style>
+</head>
+<body>
+     <span>hello</span>
+
+     <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+     </ul>
+
+     <p class="para"><strong> text in p tag </strong></p>
+
+     <p class="para1">hello i am para2</p>
+
+     <form>
+        <input type="text" placeholder="enter your name">
+     </form>
+</body>
+</html>

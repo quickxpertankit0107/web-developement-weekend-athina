@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>full page animation</title>
+    <style>
+      .animated-box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: moveBox 8s infinite; 
+      }
+
+      @keyframes moveBox {
+        0% {
+          background-color: red;
+          left: 0;
+          top: 0;
+        }
+        25% {
+          background-color: rgb(19, 208, 54);
+          left: calc(100% - 100px);
+          top: 0;
+        }
+        50% {
+          background-color: rgb(0, 72, 255);
+          left: calc(100% - 100px);
+          top: calc(100vh - 100px);
+        }
+        75% {
+          background-color: red;
+          left: 0;
+          top: calc(100vh - 100px);
+        }
+        100% {
+          background-color: red;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      h3 {
+        text-align: center;
+        color: #fff;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated-box">
+      <h3>Onida</h3>
+    </div>
+  </body>
+</html>

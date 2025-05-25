@@ -1,0 +1,86 @@
+----------------------------------------HTML-------------------------------------------------
+What is HTML?
+-->HTML stands for HyperText Markup language.Its basically a standard markup language
+-->for giving a static skeleton to web page and websites.
+-->To create html page create a file with fil_name.html.
+-->Html is case-insensitive.It means anything you write it will display in your browser.
+
+syntax:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+</head>
+<body>
+   content
+</body>
+</html>
+
+The charset="UTF-8" attribute in HTML specifies the character encoding used for the webpage.
+
+In this DOCTYPE is used to define which version of HTML you are using to your browser.
+In this we are using HTML5 which is latest one.It is an declare statement.
+If you dont declare it in your html it will work but,will not work properly some of its tag may get distorted. 
+
+----->Diff btwn html element and html tags
+
+if there is some content btwn start tag and end tag of html then it is known as
+html element else html tag,
+
+eg:<p> hello i am paragraph </p>  this is html element
+
+eg:<p></p>,<br> this is html tag
+
+which are new tags HTML5 tags?
+-->new sementic tags : nav,header,section and footer
+-->graphic elements : Svg,canvas
+
+there is necessary to close all tags?
+-->no it is not necessary to close all tags
+-->there there are some tags that should be closed
+like <h1></h1>, <div></div> & <p></p>
+
+but there are some tags that there is no need to close like 
+<br> break tag,<hr>,<img> & <input> , <link> etc
+
+diff btwn Inline Block and Block Level elements
+-->Block level elements are always start on a new line takes full width of your page.
+eg:h1-h6,p,div etc.
+
+-->Inline elements does not start on new line and it takes up as much width necessary to it.
+eg:span,input & img 
+
+
+Comments in html
+<!-- single line -->
+
+<!--
+multi-line
+ -->
+
+
+----------------------------------------css3-----------------------------------------
+
+
+what is CSS ?
+-->Cascading Style Sheet aka CSS,it is a Style Sheet language that is used to handle the
+presentation of web page containing html.It makes our websites more beautiful and attractive.
+-->Both html & css are 2 core technologies for building web pages
+-->To create css file we need to create with file_name.css
+-->To use css in your html u have to use <link> tag in html with rel="stylesheet attribute.This should be in your <head> tag
+
+there r 3ways to define css stylesheet 
+1)Internal CSS <head> tag you have to wirte <style> </style> and in that u have to write css
+
+its syntax is selector {property:value;}
+eg body{color:10px;}
+
+2) 2nd is Inline css in this you can write in your html element with style attribute.
+eg <h1 style="color:red">hello world</h1>.
+
+3) 3rd is external css in this u have to create an external css file and 
+link that file in your html.
+<link rel="stylesheet" href="style.css">
+---------------------------------------------------------------------------------

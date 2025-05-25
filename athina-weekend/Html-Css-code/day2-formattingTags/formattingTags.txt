@@ -1,0 +1,36 @@
+the mention below tags are inline elements..
+Formatting tags:
+Formatting are inline-elements.There are various types of formatting tags in html5
+
+new Formatting tags
+1) <em></em> -> italic
+2) <strong></strong> -> bold new in HTML5
+3) <ins> -> underline new in HTML5
+4) <mark> -> kind of marker
+5) <sup></sup> -> superscript for eg <sup>2</sup>
+6) <sub></sub> -> subscript for eg<sub></sub>
+7) <del></del> -> delete for scratching the word
+8) <small></small>->text will be small
+
+old formatting tags
+1)<u></u> means underline same as <ins></ins> tag
+2)<strike> </strike> same as <del> tag used for scratching the word 
+3)<b> </b> same as s<trong></trong> tag
+4) i same as <em></em> tag
+
+
+There are various types of selector in css
+1) . (name of ) ---->class
+2) #  (name of ) ---->id
+3) * (to slect all)  ---- universal
+4) > (child combinator)
+5) h1,h2,p,div -----> group selector used after comma(,)
+
+------------------------------------------------------------------
+<div></div>  division
+<section> -- just like div 
+-----------------------------------------------------------
+
+<hr>-- horizantal line
+
+<span> -- used for styling perticular element. it is also inline html tag

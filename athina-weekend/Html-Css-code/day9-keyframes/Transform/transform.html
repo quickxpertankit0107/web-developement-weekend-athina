@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .box{
+          width: 400px;
+          height: 100px;
+          background-color: red;
+
+        }
+        .box:hover{
+          /* 2d  start*/
+          /* translate */
+            /* transform:translate(50%,50%);
+            transition: 2s ease; */
+            /* transform: translate(90%,90%);
+            transition: 2s ease-in-out;
+            background-color: aqua; */
+
+            /* rotate: ; */
+            /* transform: rotate(-45deg);
+            transition: 1s ease; */
+
+            /* scale */
+            /* transform: scale(2);
+            transition: 1s ease; */
+
+            /* ṣkew */
+            /* transform: skew(30deg, 20deg);
+            transition: 2s ease; */
+
+            /* 2d ends */
+
+            /* 3d start*/
+
+            /* translate */
+            /* transform: translate3d(50px, 100px, 200px);
+            transition: 1s ease; */
+
+            /* rotate */
+            /* transform: rotateY(45deg) rotateX(45deg) rotateZ(45deg);
+            transition: 2s; */
+
+            /* transform: rotate3d(4,2,1,140deg); */
+            /* transform: rotate(45deg,45deg,45deg); */
+            /* transition: 1s ease; */
+            /* box-shadow: 10px 10px 10px red; */
+
+            /* scale */
+            transform: scale3d(.1,1,1);
+            transition: 1s ease;
+
+            /* 3D matrix */
+            /* first value for stretching text */
+            /* 2nd value to rotate from x to y */
+            /* 3rd value depends on 1 & 2 */
+            /* 4th it is stretching on z axis */
+            /* 5th value stretch on x axis and text is stretched on z axis */
+
+            transform: matrix3d(1, -7,
+             .8, 1, -.7, 0, 0, 0,0,0, 1,0, 0, 0, 0,1);
+            transition: 1s ease;
+
+            /* 3d ends*/
+
+        }
+    </style>
+</head>
+<body>
+     <section style="background: paleturquoise;height: 50vh;">
+      <div class="box">
+        <h1>hello everyone hover me</h1>
+     </div>
+     </section>
+</body>
+</html>

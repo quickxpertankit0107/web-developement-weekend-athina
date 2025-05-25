@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /* Descendant combinator */
+        .content div p {
+        color: blue;
+        }
+
+        /* Child combinator */
+        .wrapper > p {
+         color: red;
+        }
+
+        /* Sibling Combinator */
+        .content2 h1+p{
+            /* it will color 1st element p */
+            color: plum;
+        }
+
+        /* Subsequent-sibling combinator  */
+        .content3 h2~p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    there are 4 combinator in css 
+    1)Descendant combinator (space)
+    2)Child combinator (>)
+    3)Next sibling combinator (+)
+    4)Subsequent-sibling combinator (~)
+     -->
+
+     <section class="content">
+        <h2>Descendant Selector</h2>
+        <p> selects all elements that are nested (inside) within another element, at any level.</p>
+        <div>
+            <p>para1</p>
+            <p>para2</p>
+        </div>
+        <p>para3</p>
+      </section>
+
+      <div class="wrapper">
+        <h2>Child combinator</h2>
+
+        <p>Direct child paragraph.</p>
+        <div>
+          <p>Nested paragraph inside another div.</p>
+        </div>
+      </div>
+
+      <div class="content2">
+        <h2>Sibling combinator</h2>
+
+        <h1>Heading</h1>
+        <p>This paragraph comes immediately after the heading.</p>
+        <p>This paragraph is not selected because it's not immediately after the h1.</p>
+      </div>
+
+      <div class="content3">
+        <h2>Subsequent-sibling combinator</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <span>Not selected because it's a different element.</span>
+        <p>Paragraph 3</p>
+      </div>
+
+</body>
+</html>

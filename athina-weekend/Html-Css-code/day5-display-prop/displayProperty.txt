@@ -1,0 +1,7 @@
+display-properties
+display-none;
+display-inline: to display an element as an inline element.
+display-block: to display an element as a block element
+display-flex : to display an element as a row-level flex container.
+inline-block : to display an element as an inline-level block container.
+inline-flex :  to display an element as an inline-level flex container.

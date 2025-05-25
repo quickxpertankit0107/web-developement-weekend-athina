@@ -1,0 +1,29 @@
+.front-lists{
+    list-style-type:square;
+}
+
+#demo
+{}
+
+/* universal */
+*{
+
+}
+
+h1,p.demo{
+    
+}
+
+.frame-lists li{
+    text-transform: uppercase;
+}
+
+/* pseudo classes in css */
+.database-child li:nth-child(1){
+    text-shadow: 4px 1px 3px red;
+}
+
+.database-child li:nth-last-child(1){
+    text-shadow: 4px 1px 3px red;
+
+}

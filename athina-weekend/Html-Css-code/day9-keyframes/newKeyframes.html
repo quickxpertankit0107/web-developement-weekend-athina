@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: animie-box infinite linear 4s;
+
+            /*long hand property  */
+            /* animation-iteration-count: infinite;
+            animation-duration: 4s; */
+            /* animation-direction: reverse; */
+            /* animation-timing-function: linear; */
+        }
+
+        @keyframes animie-box {
+        0%   {
+            background-color:red;
+             left:0px;
+              top:0px;
+            }
+        25%  {
+            background-color:yellow; 
+            left:100px;
+             top:0px;
+            }
+        50%  {
+            background-color:blue;
+             left:100px;
+             top:200px;
+            }
+        75%  {
+            background-color:green; 
+            left:0px; 
+            top:200px;
+        }
+        100% {
+            background-color:red; left:0px; top:0px;}
+    }
+        /* @keyframes animie-box {
+            from {
+                left: 140px;
+                top: 30px;
+            }
+
+            to{
+                left: 0;
+                top: 0;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

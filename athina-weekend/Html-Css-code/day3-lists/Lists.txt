@@ -1,0 +1,32 @@
+Lists are block level elements
+3types of list:
+-->Unorder list
+-->Order list
+-->Description list
+
+1)unorder lists
+by default it is in disc style
+--syntax:
+<ul>
+<li></li>
+</ul>
+
+2)ordered lists
+list-style-type:by default 1,2,3
+it has some attributes:
+type:type="a" will give a,b,c 
+type:type="start" for eg type ="50" it wil print 50,51,52 depends on your li's
+--syntax:
+<ol>
+ <li>home</li>
+ <li>about</li> 
+ <li>contact</li>
+</ol>
+
+
+3)description lists
+--syntax:
+<dl>                 // description list
+<dt>lime soda</dt>  // description term
+<dd>soda</dd>      //  describe data
+</dl>

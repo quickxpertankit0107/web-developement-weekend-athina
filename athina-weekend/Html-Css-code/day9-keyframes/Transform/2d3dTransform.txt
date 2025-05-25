@@ -1,0 +1,68 @@
+2D Transforms 2D transforms involve transformations on the X and Y axes, such as 
+translation,
+rotation,
+scaling, and skewing.
+
+1)translate(x, y) – Moves from X and Y axes.
+selector {
+  transform: translate(50px, 100px);
+}
+
+2)rotate(deg) – Rotates the element around a 2D point
+selector {
+  transform: rotate(45deg);
+}
+
+3)scale(x, y) – Scales the element by x and y along the horizontal and vertical axes.
+selector {
+  transform: scale(1.5, 2);
+}
+
+4)skew(x, y) – Skews the element along X and Y axes.
+selector {
+  transform: skew(30deg, 20deg);
+}
+-----------------------------------------------------------------
+3D Transforms
+3D transforms involve transformations along X, Y, and Z axes. 
+In addition to basic transformations like translate, rotate, scale, and skew, 
+3D transforms also include perspective, which creates depth and makes the transformations 
+looks realistic.
+
+1)translate3d(x, y, z) – Moves the element along X, Y, and Z axes.
+selector {
+  transform: translate3d(50px, 100px, 200px);
+}
+
+2)
+rotateX(deg) – Rotates the element around the X axis.
+rotateY(deg) – Rotates the element around the Y axis.
+rotateZ(deg) – Rotates the element around the Z axis it is similar to the 2D rotate().
+selector {
+  transform: rotateX(45deg) rotateY(30deg) rotateZ(10deg);
+}
+
+3)scale3d(x, y, z) – Scales the element along X, Y, and Z axes.
+selector {
+  transform: scale3d(1.5, 1.5, 2);
+}
+
+4)
+3D skew effect, but it’s implemented differently compared to 2D skew. 
+While 2D skewing happens along the X and Y axes, 3D skewing 
+involves skewing along the X, Y, and Z axes. 
+However, there's no direct skew3d() function in CSS. 
+Instead, you can achieve a 3D skew effect using matrix3d()
+
+3D skew
+The matrix3d() function is used for applying a 3D transformation to an element. 
+It allows you to define the transformation using a 4x4 matrix, 
+which consists of 16 values.
+syntax:
+matrix3d(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p)
+
+5)perspective(value) – Defines how far the 3D element is from the viewer, 
+affecting the depth effect.
+-----------------------------------------------------------------
+clip-path-> https://bennettfeely.com/clippy/
+using the clip path u can create attractive designs for your websites

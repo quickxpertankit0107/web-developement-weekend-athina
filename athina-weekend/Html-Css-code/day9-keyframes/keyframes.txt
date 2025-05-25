@@ -1,0 +1,76 @@
+@keyframes
+animation // name of your animation
+
+animation-timing-function
+ease 
+linear 
+ease-in
+ease-out
+ease-in-out
+
+animation-fill-mode
+none
+forwards
+backwards
+both
+
+animation-duration:1s,2s,3s
+
+animation-direction:
+normal
+reverse
+alternate
+alternate-reverse
+
+animation-delay // can be 1s 2s 3s etc
+animation-iteration-count  // no of count that can be 1,2,3,infinite
+
+
+syntax:
+
+selector {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {  
+  from {property: value;}  //0% (start)
+  to {property: value;}   //100% (complete)
+}
+or
+@keyframes example {
+  0%   {}
+  25%  {}
+  50%  {}
+  75%  {}
+  100% {}
+}
+--------------------------------------------------------------------------------------------
+overall output
+
+selector {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+shorthand
+animation: example .7s linear 5s infinite alternate;
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}

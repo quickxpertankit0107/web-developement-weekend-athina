@@ -1,0 +1,25 @@
+Positions in Css
+there r various positions property in css
+1)static by default
+2)Absolute
+3)Relative
+4)Fixed
+5)Sticky
+
+---------------------------------------------------------------------------------------------------
+new tags in html5
+some block level tags:
+<blockquote> : The <blockquote> element is used to represent a section of content that is a quote from another source.
+<address> : The <address> element is used to represent contact information for the author or owner of a document or section.
+<fieldset> : The <fieldset> element is used to group related elements in a form, often with a visual border around them. 
+<article> : The <article> element is used to represent independent, self-contained content, such as a blog post, news article
+<aside> : The <aside> element is used for content that is related to the surrounding content but can stand alone. This could be sidebars, pull quotes, or advertisements.
+<figure> : The <figure> element is used to group content like images, diagrams, or illustrations, along with a caption that describes it. It is commonly paired with <figcaption>.
+<figcaption> : The <figcaption> element is used to provide a caption or description for the content inside the <figure> element, such as images, charts, or diagrams.
+<legend>: it is used to represent a caption or title for a group of form elements enclosed within a <fieldset>
+
+inline
+<q> : The <q> element is used to indicate short inline quotations.
+<abbr title=''> :  The <abbr> element is used to define an abbreviation or acronym typically done using the title attribute.
+<cite> : <cite> element is used to reference a source, typically for a work like a book, article, or website. 
+---------------------------------------------------------------------------------------------------

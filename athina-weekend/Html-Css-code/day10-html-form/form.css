@@ -1,0 +1,394 @@
+/* import google font montserrat */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+/* reset box model and spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* main body styling */
+body {
+  align-items: center;
+  background: black;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100vh;
+  justify-items: center;
+}
+
+/* remove focus outline from inputs */
+input:focus {
+  outline: none;
+}
+
+/* placeholder color */
+::placeholder {
+  color: #F7B1AB;
+}
+
+/* main container for signup form */
+.signup-container {
+  display: flex;
+  max-width: 900px;
+}
+
+/* label styling for photo upload */
+.right-container .pets-photo label {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+}
+
+/* button styling for photo upload */
+.right-container .pets-photo button {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+/* hover effect for photo upload button */
+.right-container .pets-photo button:hover {
+  background-color: #F7B1AB;
+}
+
+/* left section with branding and image */
+.left-container {
+  background: #807182;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+
+/* heading in left container */
+.left-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+
+/* icon styling inside heading */
+.left-container h1 i {
+  background: #F7B1AB;
+  border-radius: 50%;
+  color: #807182;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+
+/* puppy image positioning */
+.left-container .puppy {
+  bottom: -5px;
+  position: absolute;
+  text-align: center;
+}
+
+/* overlay effect for image */
+.left-container .puppy:before {
+  background: #807182;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+/* puppy image styling */
+.left-container img {
+  filter: sepia(100%);
+  width: 70%;
+}
+
+/* right section containing the form */
+.right-container {
+  background: #f9c7c2;
+  display: grid;
+  grid-template-areas: "." ".";
+  width: 500px;
+}
+
+/* form heading */
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* horizontal sets of input pairs */
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* input field styles */
+.right-container input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+}
+
+/* input and label text color */
+.right-container input, .right-container label {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* padding for form header */
+.right-container header {
+  padding: 40px;
+}
+
+/* width standardization */
+.right-container label, .right-container input, .right-container .pets-photo {
+  width: 176px;
+}
+
+/* layout for photo section */
+.right-container .pets-photo {
+  align-items: center;
+  display: grid;
+  grid-template-areas: ". .";
+}
+
+/* button inside photo upload */
+.right-container .pets-photo button {
+  border: none;
+  border-radius: 50%;
+  height: 38px;
+  margin-right: 10px;
+  outline: none;
+  width: 38px;
+}
+
+/* icon color in upload button */
+.right-container .pets-photo button i {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+/* layout for weight radio options */
+.right-container .pets-weight .radio-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* footer of the form */
+.right-container footer {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 5px 40px;
+}
+
+/* button styling in footer */
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* back button styling */
+.right-container footer #back {
+  background: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+/* hover effect for back button */
+.right-container footer #back:hover {
+  background: #171A2B;
+  color: white;
+}
+
+/* next button styling */
+.right-container footer #next {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+/* hover effect for next button */
+.right-container footer #next:hover {
+  background: #171A2B;
+}
+
+/* label spacing for form groups */
+.pets-name label, .pets-breed label, .pets-birthday label, .pets-gender label, .pets-spayed-neutered label, .pets-weight label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* radio button container */
+.radio-container {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* label inside radio group */
+.radio-container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 80px;
+}
+
+/* hide default radio */
+.radio-container input[type=radio] {
+  display: none;
+}
+
+/* checked radio label styling */
+.radio-container input[type=radio]:checked + label {
+  background: #F7B1AB;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* microchip checkbox section */
+.pets-microchip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* checkbox input size and color */
+.pets-microchip input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #F7B1AB;
+}
+
+/* checkbox label styling */
+.pets-microchip label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* date input styles */
+input[type="date"] {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-right: 10px;
+  color: #F7B1AB;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  cursor: pointer;
+  width: 176px;
+}
+
+/* hide default calendar icon background */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #F7B1AB;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* custom calendar icon wrapper */
+.custom-date-wrapper {
+  position: relative;
+  width: 176px;
+}
+
+/* custom calendar icon styling */
+.custom-date-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  pointer-events: none;
+  color: #F7B1AB;
+}
+
+/* remove textarea outline on focus */
+textarea:focus {
+  outline: none;
+}
+
+/* notes section container */
+.pets-notes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+/* label styling for notes */
+.pets-notes label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* textarea field styling */
+.pets-notes textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* placeholder color in textarea */
+.pets-notes textarea::placeholder {
+  color: #F7B1AB;
+}
+
+/* owner's email input styling */
+.owner-email {
+  width: 100%;
+}
+
+/* label styling for owner's email */
+.owner-email label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* input styling for owner's email */
+.owner-email input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+}
+

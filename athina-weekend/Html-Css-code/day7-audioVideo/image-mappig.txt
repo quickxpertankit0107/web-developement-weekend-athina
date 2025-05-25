@@ -1,0 +1,16 @@
+take image tak use the usemap tag
+map with the map tag
+
+syntax;
+<img src="demo.jpg" alt="demoImage" usemap="#demo">
+
+<map name="demo">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="jacket.html">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="shirt.html">
+</map>
+
+circle cordinates x,y & r
+rect cordinate x1,y1,x2,y2
+
+below is website used for mapping cordinates
+https://www.image-map.net/
