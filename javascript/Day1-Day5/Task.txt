@@ -1,0 +1,47 @@
+Task1: Use for loop to get the below output
+
+***
+**
+*
+--------------------------------------------------------------------------------
+Task 2 : Write a code to vote use dialog box prompt
+hint: 
+age = 14 ---> "You can't vote. Too young."
+age = 70 ---> "You can't vote. Age limit reached."
+age = 30 ---> "You can vote."
+
+
+Task 3 : Find odd and even numbers using prompt
+
+Task 4 : object task
+var employee ={
+                    id:1,
+                    name:"ankit",
+                    sal:123456,
+                    city:["bombay","chennai"],
+                    desigintion:{manager:true,hr:false},
+                    ornganization:[
+                        "kalwa","thane",["banglore","Tamil Nadu"],
+                        "kerla",[
+                            {branches:'kalyan',id:23}
+                        ]
+                    ]
+                }
+
+Take out: 
+city bombay  
+ornganization "banglore","Tamil Nadu"
+id 23       
+
+
+Task 5:
+  var arrObj = [
+                    {name:"sam",city:"thane"},
+                    ["hello",12345],
+                     {sal:3000,number:123456}
+            ]
+
+Take out
+city: thane
+number : 123456   
+

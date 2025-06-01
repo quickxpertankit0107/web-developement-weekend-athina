@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <button onclick="gameOn()">Start</button>
+    
+    <script>
+        function gameOn() {
+        var playr1 = prompt("type stone,paper or sicosor").toLowerCase();
+        var playr2 = prompt("type stone,paper or sicosor").toLowerCase();
+
+        // stone
+        if(playr1==="stone" && playr2==="stone"){
+            alert("its a tie")
+        }
+
+        else if(playr1=="stone" && playr2=="paper"){
+            alert("paper wins")
+        }
+
+        else if(playr1=="stone" && playr2=="scisor"){
+            alert("stone wins")
+        }
+
+        // scisor
+        else if(playr1=="sicosor" && playr2=="sicosor"){
+            alert("its a tie")
+        }
+
+        else if(playr1=="sicosor" && playr2=="stone"){
+            alert("stone")
+        }
+
+        else if(playr1=="sicosor" && playr2=="paper"){
+            alert("sicsor wins")
+        }
+        
+        // paper
+        else if(playr1=="paper" && playr2=="paper"){
+            alert("its a tie")
+        }
+        else if(playr1=="paper" && playr2=="stone"){
+            alert("paper wins")
+        }
+
+        else if(playr1=="paper" && playr2=="sicosor"){
+            alert("sicosor wins")
+        }
+
+        else{
+            alert('something went wrong')
+        }
+        }
+    </script>
+</body>
+</html>

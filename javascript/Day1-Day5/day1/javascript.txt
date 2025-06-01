@@ -1,0 +1,49 @@
+JavaScript was invented by Brendan Eich in 1995.
+
+It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+
+After Netscape handed JavaScript over to ECMA(European Computer Manufacturers Association), 
+the Mozilla foundation continued to develop JavaScript for the Firefox browser. 
+Mozilla's latest version was 1.8.5. (Identical to ES5).
+
+1997	ES1	ECMAScript 1 was released
+
+2018	ES6	Full support for ES6 in all browsers
+
+Latest ES13 introduced in 2022 which is supported for all browser
+
+-------------------------------------------------------
+
+to start with js in your  html <body></body> tag call <script> tag and start coding
+
+
+what is js?
+js is client side scripting language as well as server side scripting language.but when we will work with nodejs
+It is use to create dynamic webpages.
+With the help of js u can build stuning webpages.
+It is an case sensitive language.
+It is an intrepreted language
+
+There are 2types of datatypes in JavaScript
+1)Primitive datatypes:
+i)string -->collection of characters written in "" or ''
+ii)undefined --> declare but never used
+iii)boolean --> true or false
+iv)null
+v)number --> normal numbers 1,2,3...etc
+--------------------------------------------------------------
+2)Non Primitive
+i)arrays
+ii)objects
+
+ways to define variables:
+
+do's:
+var test_one;
+let demo1;
+const example;
+
+don't
+var 1test;
+let test-one;
+const exa mple;
