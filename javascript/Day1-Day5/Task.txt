@@ -4,14 +4,73 @@ Task1: Use for loop to get the below output
 **
 *
 --------------------------------------------------------------------------------
+//TASK 1: ATHINA
+//loop
+//var i, j
+
+//outer loop
+for (let i = 3; i>= 1; i--) {
+    let row = ' ';
+ //inner loop
+    for (let j = 1;  j <= i; j++) {
+        row += '*';
+    }
+    console.log (row);
+}
+____________________________________________________________________________
 Task 2 : Write a code to vote use dialog box prompt
 hint: 
 age = 14 ---> "You can't vote. Too young."
 age = 70 ---> "You can't vote. Age limit reached."
 age = 30 ---> "You can vote."
+__________________________________________
+//TASK 2: ATHINA
+//Conditional statements: PROMPT
 
+var age = prompt('Enter age');
+if (age == 14) {
+    alert ("You can't vote. Too young.")
+}
+//else if (age == 30) {
+ //   alert ("You can vote.")
+//}
+else if (age >= 15 && age <= 17) {
+    alert ("You can't vote yet. You're almost there.")
+}
+else if (age >= 18 && age <= 69) {
+    alert ("You can vote.")
+}
+
+else if (age > 69) {
+    alert ("You can't vote. Age limit reached.")
+}
+
+else  {
+    alert ("Error. Contact Customer Support.")
+}
+console.log(age)
+
+____________________________________________________________________
 
 Task 3 : Find odd and even numbers using prompt
+___________________________________________________________________
+
+//TASK 3: ATHINA
+//Conditional statements: PROMPT
+
+var number = prompt('Enter number');
+
+if (number == 1 || number == 3 || number == 7 || number == 9) {
+    alert ("The number is odd.")
+}
+else if (number == 2 || number == 4 || number == 6 || number == 8) {
+    alert ("The number is even.")
+}
+else  {
+    alert ("Error. Contact Customer Support.")
+}
+console.log(number)
+________________________________________________
 
 Task 4 : object task
 var employee ={
@@ -32,7 +91,12 @@ Take out:
 city bombay  
 ornganization "banglore","Tamil Nadu"
 id 23       
-
+_____________________________________________________________________
+//TASK 4: ATHINA
+//console.log(employee.city[0]);
+//console.log(employee.organization [2]);
+console.log (employee.organization[4][0].id);
+_____________________________________________________
 
 Task 5:
   var arrObj = [
@@ -44,4 +108,11 @@ Task 5:
 Take out
 city: thane
 number : 123456   
+______________________________________________
+//TASK 5: ATHINA
+
+//console.log (arrObj[0].city);
+console.log (arrObj[1][1]);
+
+______________________________________________
 
