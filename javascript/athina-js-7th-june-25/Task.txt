@@ -1,0 +1,10 @@
+1) factorial of any number using forloop and prompt
+hint: if user enter 5 than 5fact is 120 means 5x4x3x2x1=120
+
+2) use prompt and get your favoirite food
+ex:if user enter food like burger then output will be yor fav food is burger
+
+3) addition of two nos using prompt.if user enter 1st number then enter 2nd number get the addition of them
+
+4) refer from functions folder take any example like normal-fun,anonyomous or arrow 
+add code for address means, validation for address.
