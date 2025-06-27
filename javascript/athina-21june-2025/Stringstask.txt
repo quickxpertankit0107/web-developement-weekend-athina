@@ -1,0 +1,24 @@
+1) use string methods
+output:
+before---> quickxpert QUICK QUICK
+after--> quickadvance instant instant
+
+2) in given string "hello i am sam from nyc,studing at xyz"
+take out studing at xyz
+
+3)convert given string "hello world here" in array
+output:
+['hello', 'world', 'here']
+
+4) use prompt if user enter any number take square of that number
+for eg--> user enter 2 -->output 4
+
+5) use prompt and if user enter his name then alert the output in uppercase
+
+6) if user type some text inside prompt gets the length of that sentence but if he
+enters athi   na then count only 1space and then give its length
+
+hint: .replace(/ /g, '');  <-- remove all spaces to count only non-space characters
+
+7) use prompt and add numbers like 10,20,30 and find the max of that number
+use array for loop
