@@ -1,0 +1,2 @@
+1) In date methods style sun,time,june
+2) In form validation add text area validation also style the form in your way

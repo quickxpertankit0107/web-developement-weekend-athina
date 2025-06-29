@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery with Titles</title>
+  <style>
+    #image-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      max-width: 150px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    section{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+ <section>
+     <h1>Image Gallery</h1>
+     <div id="image-container">
+
+     </div>
+ </section>
+
+  <script>
+    const images = [
+      { id: 1, src: "https://cdn.pixabay.com/photo/2025/06/10/17/53/field-9652617_1280.jpg", title: "First Image",   href:"https://quickxpertinfotech.com"},
+      { id: 2, src: "https://cdn.pixabay.com/photo/2025/04/30/04/43/forest-9568429_1280.jpg", title: "Second Image", href:"example.com" },
+      { id: 3, src: "https://cdn.pixabay.com/photo/2025/04/30/04/43/forest-9568429_1280.jpg", title: "Third Image" , href:"example.com"},
+      { id: 4, src: "https://cdn.pixabay.com/photo/2025/04/30/04/43/forest-9568429_1280.jpg", title: "Third Image" , href:"example.com"},
+      { id: 5, src: "https://cdn.pixabay.com/photo/2025/04/30/04/43/forest-9568429_1280.jpg", title: "Third Image" , href:"example.com"},
+      { id: 6, src: "https://cdn.pixabay.com/photo/2025/04/30/04/43/forest-9568429_1280.jpg", title: "Third Image" , href:"example.com"},
+
+    ];
+
+        // arrow function
+        // const container = document.getElementById("image-container");
+
+        // container.innerHTML = images.map(({id, src, title}) => `
+        // <div class="image-item" id="image-${id}">
+        //     <img src="${src}" alt="${title}" />
+        //     <p>${title}</p>
+        // </div>
+        // `).join('');
+
+        // normal function
+        const container = document.getElementById("image-container");
+
+        container.innerHTML = images.map(function({id, src, title,href}) {
+        return `
+            <div class="image-item" id="image-${id}">
+            <a href="${href}" target="_blank">
+             <img src="${src}" alt="${title}" />
+             <p>${title}</p>
+            </a>
+            </div>
+        `;
+        }).join('');
+  </script>
+
+</body>
+</html>
