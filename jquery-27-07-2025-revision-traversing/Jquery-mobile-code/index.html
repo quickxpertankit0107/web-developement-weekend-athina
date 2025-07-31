@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover / Click Toggle</title>
+  <style>
+    .para1 {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn3">Click or Hover to Toggle</button>
+  <p class="para1">This is a paragraph to toggle.</p>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+    // Detect touch device
+    const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+    if (isTouch) {
+      // Mobile: Use click to toggle
+      $('.btn3').on('click', function(e) {
+        e.preventDefault();
+        $('.para1').toggle();
+      });
+    } else {
+      // Desktop: Use hover to show/hide
+      $('.btn3').hover(
+        function() {
+          $('.para1').slideToggle();
+        }
+      );
+    }
+  </script>
+
+</body>
+</html>
