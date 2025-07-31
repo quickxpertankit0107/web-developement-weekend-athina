@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <div>
+        hello
+    </div>
+
+    <div>
+        hello i am div 2
+    </div>
+
+    <div>
+        hello
+    </div>
+
+    <p>hello qxpert</p>
+    <button onclick="color()">click</button>
+
+    <script>
+        var demo = document.getElementsByTagName("div");
+        demo[0].style.background="red";
+        demo[1].style.background="aqua";
+        demo[2].style.background="brown";
+
+
+        for(var i=2;i<=demo.length;i++){
+            demo[i].style.background="red";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+</head>
+
+<body>
+    <h1 style="color: green;">Quickxpert</h1>
+
+    <div class="red">
+        <button id="redirectBtn">Redirect Quickxpert</button>
+    </div>
+    <script>
+        // will open in next page
+        $("#redirectBtn").click(function () {
+            const btn = $(this);
+            btn.text("Redirecting...")
+
+            // const delay = 5000;
+            const url = "https://quickxpert.com/";
+
+            setTimeout(function () {
+                window.open(url);
+
+                btn.text("Redirect Quickxpert")
+            }, 2000);
+        });
+
+        // same page open
+        //   $(".red").click(function(){
+        //     $("#redirectBtn").text("Redirecting....")
+            
+        //     // let delay = 5000;
+        //     let url = "https://quickxpert.com/";
+        //     setTimeout(function(){
+        //         location = url;
+        //     },5000)
+        // })
+    </script>
+</body>
+
+</html>

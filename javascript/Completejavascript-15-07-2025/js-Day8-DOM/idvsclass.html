@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id vs class</title>
+</head>
+<body>
+    <!-- id is unique can be used only one element -->
+     <!-- class can be used accross various elements -->
+      
+     <p id="text"></p>
+     <p id="text"></p>
+     <p id="text"></p>
+
+     <p class="text2"></p>
+     <p class="text2"></p>
+     <p class="text2"></p>
+
+
+     <p class="color1">This is a paragraph.</p>
+     <p class="color1">This is a paragraph.</p>
+     <p class="color1">This is a paragraph.</p>
+     <p class="color1">This is a paragraph.</p>
+     <p class="color1">This is a paragraph.</p>
+
+
+
+
+     <script>
+        let title = document.getElementById("text");
+        console.log(title);
+        // console check class
+        let title2= document.getElementsByClassName("text2");
+        console.log(title2);
+        
+      
+        const colorTag = document.getElementsByClassName("color1");
+        // array ->HTML collection
+        // colorTag[0].style.backgroundColor = "red";
+        for (let i = 0; i < colorTag.length; i++) {
+        colorTag[i].style.backgroundColor = "red";
+       
+}
+        
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>closest()</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .container { 
+    padding: 10px; 
+    border: 1px solid #ccc;
+     margin: 10px;
+      }
+    .highlight { 
+    background-color: yellow;
+     }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="container">
+      hello athina
+   </div>
+    Container 1
+    <button class="btn1">Click me btn1</button>
+    <button class="btn">Click me</button>
+    <button class="btn">Click me</button>
+  </div>
+
+  
+
+  <!-- <div class="container">
+    Container 2
+    <div>
+      <button class="btn">Click me too</button>
+    </div>
+  </div> -->
+
+  <script>
+    $('.btn1').click(function() {
+      // find the closest ancestor with class 'container' starting from the button clicked
+      const closestContainer = $(this).closest('.container');
+      console.log(closestContainer);
+      
+      
+      // Highlight it
+      closestContainer.toggleClass('highlight');
+    });
+  </script>
+  
+</body>
+</html>

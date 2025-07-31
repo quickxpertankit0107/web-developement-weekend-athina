@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get by id</title>
+    <link rel="icon" href="https://quickxpertinfotech.com/assets/img/quickxpert-logo3.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- onchange -->
+    <input type="text" id="myInput" onchange="displayValue()">
+    <div id="displayDiv"></div>
+
+
+    <div id="demo"></div>
+    <button onclick="show()">show</button>
+
+    <!-- onhover -->
+    <!-- <button onmouseover="call()">click me</button>
+    <p id="test"></p> -->
+
+    <!-- <button onclick="show()">show text</button>
+    <button onclick="hide()">hide text</button>
+
+    <div id="demo"></div> -->
+
+    <!-- set attribute -->
+    <!-- <img id="addImg">
+
+    <button onclick="showImg()">show img</button> -->
+
+    <script>
+
+         // onchange
+        function displayValue() {
+        var inputValue = document.getElementById('myInput').value;
+        document.getElementById('displayDiv').innerHTML = inputValue;
+        }
+
+          function show() {
+            var test = document.getElementById("demo").innerText="hello";
+            var styleCss = document.getElementById("demo");
+            // long method css
+            // styleCss.style.background="red";
+            // styleCss.style.color="blue";
+            // styleCss.style.fontSize="40px";
+
+            // short method css
+            styleCss.style.cssText
+            ="background:red;color-white; text-transform:uppercase;text-align:center;";
+        }
+
+        //   function hide() {
+        //     var test = document.getElementById("demo").innerText="";
+        // }
+
+        // function showImg() {
+        //     var myImg = document.getElementById("addImg");
+        //     myImg.setAttribute("src","https://cdn.pixabay.com/photo/2025/06/11/07/18/wildlife-9653797_1280.jpg");
+        //     // myImg.removeAttribute("src","");// do this in another function
+        // }
+
+
+        // onclick
+        // function call(){
+        //     var demo= document.getElementById('test').innerHTML="hello";
+        // }        
+    </script>
+</body>
+</html>

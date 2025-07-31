@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* #secret {
+            background: red;
+            text-align: center;
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+
+    <h1>Task 1</h1>
+    <p id="secret">This is a secret message.</p>
+    <button id="toggleButton" onclick="toggleSecret()">Hide</button>
+
+    <h1>Task 2</h1>
+
+    <input type="text" id="username" placeholder="Type your name" onchange="handleNameChange()">    
+    <p id="output"></p>     
+    <script>
+        // normal function
+        function toggleSecret() {
+            var secret = document.getElementById("secret");
+            var button = document.getElementById("toggleButton");
+
+            if (secret.style.display === "none") {
+                // secret.style.cssText = "width:300px;margin:0 auto;";
+                secret.style.display = "block";
+
+                button.innerText = "Hide";
+            } else {
+                secret.style.display = "none";
+                button.innerText = "Show";
+            }
+        }
+
+            function handleNameChange() {
+            var username = document.getElementById("username").value;
+            document.getElementById("output").innerText = "You entered: " + username;
+        }
+
+        // const secret = document.getElementById("secret");
+        // const button = document.getElementById("toggleButton");
+
+        // button.addEventListener("click", function () {
+        //     if (secret.style.display === "none") {
+        //         secret.style.display = "block";
+        //         button.innerText = "Hide";
+        //     } else {
+        //         secret.style.display = "none";
+        //         button.innerText = "Show";
+        //     }
+        // });
+    </script>
+</body>
+</html>

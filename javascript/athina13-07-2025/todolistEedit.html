@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      background: #e0e0e0;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .task-actions {
+      margin-top: 5px;
+      display: flex;
+      gap: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Simple To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="mainButton" onclick="handleTask()">Add</button>
+    <button onclick="removeLast()">Remove Last</button>
+    <button id="cancelButton" onclick="cancelEdit()" style="display: none;">Cancel</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    let tasks = [];
+    let editingIndex = 0; //  no task edited for now
+
+    function renderList() {
+      let html = "";
+      for (let i = 0; i < tasks.length; i++) {
+        html += `
+          <li>
+            ${tasks[i]}
+            <div class="task-actions">
+              <button onclick="editTask(${i})">Edit</button>
+              <button onclick="deleteTask(${i})">Delete</button>
+            </div>
+          </li>
+        `;
+      }
+      document.getElementById("taskList").innerHTML = html;
+    }
+
+    function handleTask() {
+      const input = document.getElementById("taskInput").value;
+
+      if (input) {
+        if (editingIndex === -1) {  // value should not be 0 or 1 coz editingIndex is 0
+          // Add new task
+          tasks.push(input);
+        } else {
+          // update existing task
+          tasks[editingIndex] = input;
+          editingIndex = -1; // do not set to 0 or 1 unless youre sure youre already editing a task.
+          document.getElementById("mainButton").innerText = "Add";
+          document.getElementById("cancelButton").style.display = "none";
+        }
+
+        document.getElementById("taskInput").value = "";
+        renderList();
+      }
+    }
+
+    function removeLast() {
+      tasks.pop();
+      renderList();
+    }
+
+    function deleteTask(index) {
+      tasks.splice(index, 1);
+      cancelEdit();
+      renderList();
+    }
+
+    function editTask(index) {
+      editingIndex = index;
+      document.getElementById("taskInput").value = tasks[index];
+      document.getElementById("mainButton").innerText = "Update";
+      document.getElementById("cancelButton").style.display = "inline-block";
+    }
+
+    function cancelEdit() {
+      editingIndex = -1;
+      document.getElementById("taskInput").value = "";
+      document.getElementById("mainButton").innerText = "Add";
+      document.getElementById("cancelButton").style.display = "none";
+    }
+  </script>
+</body>
+</html>

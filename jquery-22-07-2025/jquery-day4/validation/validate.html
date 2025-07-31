@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        /* .error{
+            color: red;
+            display: block;
+        } */
+        #name-error{
+            color:red;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- to know more about validat in jquery visit below link -->
+     <!-- https://jqueryvalidation.org/documentation/ -->
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="name"/>
+
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" ></script>
+   <script>
+
+        $("#registrationForm").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3,
+                    regex: /^[A-Za-z\s]+$/,
+                },
+                phone: {
+                    required: true,
+                    regex:/^\d{10}$/, // regex for phone
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                },
+                confirm_password: {
+                    required: true,
+                    equalTo: "#password",
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name",
+                    minlength: "Your name must have only characters",
+                    // if regex is not working then invalid format will work
+                    regex: "only characters, no numbers",
+                },
+                phone: {
+                    required: "Please enter your phone number",
+                    regex: "Please enter a valid phone number (e.g., (123) 456-7890 or 123-456-7890)",
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 6 characters long",
+                },
+                confirm_password: {
+                    required: "Please confirm your password",
+                    equalTo: "Password does not match",
+                }
+                
+            },
+            submitHandler: function(a) {
+                alert("submitted successfully")
+                a.submit();
+            },
+        });
+
+        $.validator.addMethod("regex", function(value, element, pattern) {
+            // value is the current input value entered by the user in the form  eg: like "1234567890"
+            // element is the DOM element (the actual HTML input element) being validated
+           // pattern is the regular expression
+
+           //this.optional(element) checks if the element 
+           // is optional and empty.
+            return this.optional(element) || pattern.test(value);
+        }, "Invalid format while");
+
+
+   </script>
+
+</body>
+</html>

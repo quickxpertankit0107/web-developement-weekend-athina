@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>traverse</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .grandparent {
+      padding: 20px;
+      background-color: #f9c2ff;
+    }
+
+    .parent {
+      padding: 20px;
+      background-color: #c2f9ff;
+    }
+
+    .child {
+      padding: 20px;
+      background-color: #c2ffc2;
+      cursor: pointer;
+    }
+
+    .highlight {
+      outline: 3px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grandparent">
+    Grandparent
+    <div class="parent">
+      Parent
+      <div class="child">Click Me (Child)</div>
+    </div>
+  </div>
+
+  <script>
+    // .parents() returns all matching ancestors in the DOM hierarchy
+    $('.child').click(function () {
+    //   $(this).parents().addClass('highlight');
+      $(this).parents().toggleClass('highlight');
+
+    });
+
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* position: relative; */
+        }
+
+        @media screen {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        hello athina
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        // $(".box1").mouseover(function(){
+        //     $(this).animate({top:"30px",fontSize:"30px"},1000).css({"background":"red"}).delay(500)
+        // })
+
+        //  $(".box1").mouseleave(function(){
+        //     $(this).animate({top:"0px",fontSize:"10px"},2000).css({"background":"green"}).delay(500)
+        // })
+        
+        // responsive code 
+        $(window).resize(function() {
+        if ($(window).width() < 600) {
+        $('.box1').css({"background":"red","width":"500px"});
+        } else {
+        $('.box1').css('background', '');
+        }
+
+         if ($(window).width() < 300) {
+        $('.box1').css({"background":"red","width":"100px"});
+        } else {
+        $('.box1').css('background', '');
+        }
+        });
+
+    </script>
+</body>
+</html>

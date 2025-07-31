@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+      
+        /* navbar styles */
+        nav {
+            background-color: #333;
+            padding: 25px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: rgb(97, 215, 242);
+            bottom: -5px;
+            left: 50%;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 35%;
+        }
+        nav ul li a:hover {
+            color: rgb(97, 215, 242);
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        /* navbar style ends */
+
+        /* active link styles */
+        nav ul li a.active {
+            color: rgb(97, 215, 242);
+            font-weight: bold;
+        }
+        nav ul li a.active::after {
+            width: 100%;
+            left: 0%;
+            transform: none;
+        }
+         /* active link styles end*/
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+  <main>
+    all code
+  </main>
+    
+
+    <script>
+            // hover effect for links
+            $('nav ul li a').hover(function() {
+                $(this).css('color', 'rgb(97, 215, 242);');
+                $(this).find('::after').css('width', '100%');
+            });
+
+            // active class
+            $('nav ul li a').click(function() {
+                // remove 'active' class from all links
+                $('nav ul li a').removeClass('active');
+
+                // add 'active' class to the clicked link
+                $(this).addClass('active');
+            });
+    </script>
+    
+</body>
+</html>

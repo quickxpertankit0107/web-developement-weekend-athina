@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array obj</title>
+</head>
+<body>
+   <script>
+     var ArrObj = [
+        "sam","john",[10,20,30],
+        {
+            city:["nyc","la","berlin"],
+            name:"alan",
+            addr:{add1:["denmark","sweden"],add2:["london","japan"]}
+        }
+    ]
+    console.log(ArrObj[3]);
+    // take out 30
+    // take out berlin
+    // take out addr2 -->japan
+    // document.writeln(ArrObj[3])
+    document.writeln(JSON.stringify(ArrObj[3]))
+   </script>
+</body>
+</html>

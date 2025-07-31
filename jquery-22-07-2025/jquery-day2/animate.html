@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        .animate{
+            background-color: rgb(31, 170, 107);
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-click">Click to Animate</button>
+   
+    <div class="animate">
+        <h1>jquery</h1>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+         $(".btn-click").click(function() {
+            $("h1").animate({left:'200px',top:'200px',fontSize:'30px',marginLeft:"30px",background:"red"},5000).css({"background":"red"})
+        })
+
+        // []
+    </script>
+</body>
+</html>

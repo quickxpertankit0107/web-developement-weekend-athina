@@ -1,0 +1,12 @@
+css 
+js use all the dom elememnt like getelementbyid,queryselector
+
+<div id="star">
+<button id="one">1</button>
+
+var num1= document.getelementbyid("one").value
+display = inner
+
+
+<input id=""/>
+</div>

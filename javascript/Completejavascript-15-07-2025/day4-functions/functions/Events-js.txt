@@ -1,0 +1,22 @@
+Mouse events
+-----------------------------
+onmouseover
+onmouseenter
+onmouseleave
+onmousemove
+onmouseup
+onmousedown
+onmousewheel
+------------------------------
+Click events
+------------------------------
+onclick
+ondblclick
+onchange  ---> used in input
+-----------------------------
+Keyboard events
+----------------------------
+onkeypress
+onkeyup
+onkeydown
+

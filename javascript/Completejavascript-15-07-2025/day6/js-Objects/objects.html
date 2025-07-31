@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+     
+        //  ex1
+         let person = {
+            name: "Ankit",   // property
+            age: 25,         // property
+            greet: function() {  // method // greet property returns void // In js, void means nothing is returned from a function.
+                console.log("Hello!",person.name);
+                }              
+            };
+
+            person.greet()
+            // console.log(person.greet());
+            //     console.log(person.name);
+
+        // lets try to print function
+        // let result = person.greet();
+        // console.log(result); // undefined
+
+        // ex2
+        // let car = {
+        // brand: "Toyota",         // property
+        // speed: 120,              // property
+        //     drive: function() {      // method
+        //         console.log("Driving...");
+        //     }
+        // };
+        
+        // car.drive();
+        // console.log(car["brand"]);
+        // console.log(car.drive());
+        
+    //     var emp = {
+    //     id:102,
+    //     empName:"john",
+    //     sal:4000
+    // }
+
+    // console.log("my id is",emp.id,"my name is",emp.empName,"my sal is",emp.sal);
+
+    // let person = {
+    //     fullname:"thane",
+    //     number:8989898,
+    //     id:101
+    // }
+
+    //  template literal
+    // console.log(`my name is ${person.fullname}`); 
+    </script>
+</body>
+</html>

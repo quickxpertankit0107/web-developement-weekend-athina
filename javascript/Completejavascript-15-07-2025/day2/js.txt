@@ -1,0 +1,13 @@
+Javascript is client side(run on browser) as well as server side scripting language,
+server side when we use nodejs.
+Node.js is a runtime environment that 
+lets you run JavaScript outside the browser, usually on a server.
+
+Simple example of client and server
+you visit in food restaurent 
+you(client) asks for food (request).
+waiter(server) gets the food from the kitchen(process)
+waiter brings it back to you(response).
+
+Client (your browser) --> sends a request to Server like get some data,images
+Server --> sends back HTML, images, styles

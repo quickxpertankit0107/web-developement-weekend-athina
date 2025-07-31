@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByName</title>
+</head>
+<body>
+  <form>
+    <input type="radio" name="color" value="red"> Red
+    <input type="radio" name="color" value="green"> Green
+    <input type="radio" name="color" value="blue"> Blue
+    <button onclick="showColors()" type="button" id="getColorsButton">Get Colors</button>
+</form>
+<script>
+
+    function showColors(){
+          const colorOptions = document.getElementsByName("color");
+            const selectedColors = [];
+            // Loop for radio
+            for (let i = 0; i < colorOptions.length; i++) {
+                if (colorOptions[i].checked) {
+                    selectedColors.push(colorOptions[i].value);
+                }
+                // console.log(selectedColors);
+                // console.log(colorOptions);
+            }
+            // to dont add empty data
+            if (selectedColors.length > 0) {
+                console.log("Selected colors:", selectedColors);
+            } else {
+                console.log("No color selected.");
+            };
+    }
+</script>
+</body>
+</html>

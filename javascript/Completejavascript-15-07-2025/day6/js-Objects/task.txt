@@ -1,0 +1,73 @@
+1)
+var employee ={
+                    id:1,
+                    name:"ankit",
+                    sal:123456,
+                    city:["bombay","chennai"],
+                    desigintion:{manager:true,hr:false},
+                    ornganization:[
+                        "kalwa","thane",["banglore","Tamil Nadu"],
+                        "kerla",[
+                            {branches:'kalyan',id:23}
+                        ]
+                    ]
+                }
+
+Take out: 
+city bombay  
+ornganization "banglore","Tamil Nadu"
+id 23 
+------------------------------------------------------------------------
+2)
+var arrObj = [
+        {name:"sam",city:"thane"},
+            ["hello",12345],
+        {sal:3000,number:123456}
+    ]
+Take out
+->city: thane
+->number : 123456
+------------------------------------------------------------------------
+3)
+var arr = [ 
+            [ 10,20,30,'book',false ], 
+                true,2778,["delhi","nyc"],
+                    [
+                        10.5,12,8,false,true,[1,2,3]
+                    ]
+        ]
+take out 
+->nyc
+->3        
+------------------------------------------------------------------------
+4)
+    var student = {
+                     name: "Sam",
+                     lastName:"Wilson",
+                     age: 30,
+                     hobby: {
+                     singing: true,
+                     reading: false, 
+                     },
+                     music:["Pop","English","Rock"]
+                 };
+ take out
+ ->Rock 
+ ->true  
+------------------------------------------------------------------------
+ 5)
+  var dog = {
+  name: "Buddy",
+  breed: "Labrador",
+  owner: {
+    name: "John",
+    age: 40
+  },
+  bark: function() {
+    console.log(" says: Woof!");
+  }
+};
+
+take out:
+->john
+->Buddy says: Woof!           

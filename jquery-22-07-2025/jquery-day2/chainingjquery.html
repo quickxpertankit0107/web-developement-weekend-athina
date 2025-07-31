@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery chaining</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>click me</button>
+    <p>hello jquery chaining</p>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $("button").click(function () {
+            $("p").delay(100).fadeIn('slow').css({"background":"red","position":"relative"}).animate({left:"60px"},600)
+        })
+    </script>
+</body>
+</html>

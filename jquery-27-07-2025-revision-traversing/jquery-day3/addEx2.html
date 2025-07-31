@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>add demo</title>
+  <style>
+  div {
+    width: 60px;
+    height: 60px;
+    /* display: none; */
+    margin: 10px;
+  }
+
+  section{
+    display: flex;
+  }
+  p {
+    clear: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: blue;
+    margin: 0 10px;
+    padding: 2px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+ 
+<section>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</section>
+ 
+<p>Added this... (notice no border)</p>
+
+<button class="btn1">click me</button>
+<button class="btn2">click me</button>
+
+ 
+<script>
+
+    $(".btn1").click(function(){
+        $( "div" ).show().css( "border", "2px solid red" ).add( "p" )
+        .css( "background", "yellow","display","block" );
+    })
+
+    $(".btn2").click(function(){
+         $( "div" ).css("display","none");
+    })
+
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid red;
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid red;
+            padding:20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- for each -->
+    <ul id="name-list">
+
+    </ul>
+
+   
+
+    <script>
+        // for each
+        const users = [
+            { id: 1, name: "Alice", age: 25 },
+            { id: 2, name: "Bob", age: 30 },
+            { id: 3, name: "Charlie", age: 28 }
+        ];
+
+        // var a = 3;
+        // a+=5;
+        // console.log(a);
+        
+        const nameList = document.getElementById("name-list");
+
+        users.forEach(function(u) {
+            nameList.innerHTML += `<li>${u.name}</li>`;
+        });
+        // ----------------------------------------------------------------
+       
+            </script>
+</body>
+</html>

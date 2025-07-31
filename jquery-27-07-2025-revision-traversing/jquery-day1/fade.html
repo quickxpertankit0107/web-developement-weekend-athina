@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading in jquery</title>
+    <style>
+        div{
+            display: flex;
+            gap: 20px;
+        }
+        .box1{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            /* display: none;   */
+            /* fadeOut(),fadeTo() dont use display none */
+
+        }
+
+        .box2{
+            background-color: rgb(52, 120, 33);
+            width: 300px;
+            height: 300px;
+            /* display: none;  fade in()*/
+        }
+
+        .box3{
+            background-color: rgb(0, 255, 140);
+            width: 300px;
+            height: 300px;
+            /* display: none; */
+        }
+
+        .box4{
+            background-color: red;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn">click me to slideUp</button>
+    <!-- <button class="btn2">click me to slideDown</button> -->
+    <div>
+        <div class="box1">
+            <h1>hello jquery</h1>
+        </div>
+
+        <div class="box2">
+            <h1>hello jquery</h1>
+        </div>
+
+        <div class="box3">
+            <h1>hello jquery</h1>
+        </div>
+
+        <div class="box4">
+            <h1>hello jquery box4</h1>
+        </div>
+    </div>
+
+    <script src="jqry.js"></script>
+    <script>
+    $(".btn").click(function(){
+        // $(".box1").fadeIn();
+        // $(".box1").fadeTo(1000,.2);
+        // $(".box1").fadeToggle(1000);
+        // $(".box1").fadeout(1000);
+
+        
+    })
+
+    // athina task for fadein fadeout just show up the boxes on click with same button
+    
+    </script>
+</body>
+</html>

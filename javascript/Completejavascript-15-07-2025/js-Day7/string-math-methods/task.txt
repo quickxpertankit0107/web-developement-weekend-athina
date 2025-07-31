@@ -1,0 +1,14 @@
+1) use string methods
+output:
+before---> quickxpert QUICK QUICK
+after--> quickadvance instant instant
+
+2) in given string "hello i am sam from nyc,studing at xyz"
+take out studing at xyz
+
+3)convert given string "hello world here" in array
+output:
+['hello', 'world', 'here']
+
+4) use prompt if user enter any number take square of that number
+for eg--> user enter 2 -->output 4

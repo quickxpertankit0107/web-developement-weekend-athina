@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>traverse</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .grandparent {
+      padding: 20px;
+      background-color: #f9c2ff;
+      position: relative;
+    }
+
+    .parent {
+      padding: 20px;
+      background-color: #c2f9ff;
+      position: relative;
+    }
+
+    .child {
+      padding: 20px;
+      background-color: #c2ffc2;
+      cursor: pointer;
+    }
+
+    .highlight {
+      outline: 3px solid red;
+    }
+
+    .message {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grandparent">
+    Grandparent
+    <div class="parent">
+      Parent
+      <div class="child">Click Me (Child)</div>
+    </div>
+  </div>
+
+  <script>
+    // $('.child').click(function () {
+    //   //all parents
+    //   const parents = $(this).parent();
+
+    //   // toggle class
+    //   parents.toggleClass('highlight');
+
+    //   // remove old messages
+    //   $('.message').remove();
+
+    //   // append a message to each parent
+    //   parents.each(function () {
+    //     if ($(this).hasClass('highlight')) { // checks for highlightclass
+    //       $(this).append('<div class="message">Hello Qxprt!</div>'); // add new div
+    //     }
+    //   });
+    // });
+
+
+    $('.grandparent').click(function(){
+      let demo = $(this).parents();
+      demo.addClass("highlight") 
+      $(this).append('<div>hello athina</div>')
+    })
+  </script>
+
+</body>
+</html>

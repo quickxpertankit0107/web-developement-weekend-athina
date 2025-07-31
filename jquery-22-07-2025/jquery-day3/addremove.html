@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add remove</title>
+    <style>
+         span {
+          color: #008;
+      }
+      span.sogreen {
+        color: green;
+        font-size: 30px;
+        font-weight: 800;
+      }
+    </style>
+</head>
+<body>
+
+    <div>
+      <span>Glen,</span>
+      <span>Tane,</span>
+      <span>Ralph</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+    $("div span:first-child").css( "text-transform", "uppercase")
+    .hover(function() 
+     {
+        // this refers to the current operation
+        $(this).addClass("sogreen")
+      },
+       function() {
+        $(this).removeClass("sogreen");
+      }
+    );
+    </script>
+     
+    </body>
+</html>

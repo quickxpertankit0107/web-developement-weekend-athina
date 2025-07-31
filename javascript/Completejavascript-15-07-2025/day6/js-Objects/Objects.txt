@@ -1,0 +1,43 @@
+what are objects?
+Objects are collections of methods and properties.
+objects are non primitive data types
+
+how to define objects
+obj = { 
+    key:value,key:value...,
+    id:1
+    name:"ankit"
+}
+
+1)object literals
+eg:
+var emp = {
+    id:102,
+    empName:"john"
+    sal:4000
+}
+
+eg:
+ var person = {
+       name: 'Ankit',
+        age: 30,
+            greet: function() {                        // 'greet' is a method
+                console.log('Hello, ' + person.name); // 'name' property
+            }
+        };
+
+        // Calling methods
+        person.greet();                            // Output: Hello, Ankit
+                           
+        console.log(person.age);                   // Output: 30
+---------------------------------------------------------------------------------------
+2)using instance of object (new keyword)
+var emp = new Object();
+
+emp.name ="sam";
+emp.age=26;
+emp.sal=30000
+
+document.write(emp)
+
+---------------------------------------------------------------------------------------

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math methods</title>
+</head>
+<body>
+
+    <button>click me</button>
+    <script src="scriptString.js"></script>
+    <script>
+         
+        //    javascript number math methods
+        //    Math.PI()
+        //    sqrt()-->square root 
+        //    pow(base,exponent)
+        //    round()
+        //    ceil()
+        //    floor()
+        //    max() min()
+        //    toFixed()
+        
+        // 10 integers
+        // 10.4 float
+        // 20e6 exponent
+
+        // 1-4--->10 mns 25.5=26 in round
+        // 5-9--->11
+
+        // document.write(Math.PI) /* basic formula*/
+
+        // console.log(Math.PI);
+        
+
+        // sqrt()
+        // var m = Math.sqrt(16)
+        // console.log(m)
+
+        // // pow(3**2--> 3 square)
+        // var m = Math.pow(3,3)
+        // console.log(m)
+
+    
+        // round()
+        // var m = Math.round(27.5)
+        // document.write(m)
+        // console.log(m);
+        
+      
+
+        // ceil() increse by 1 after .1
+        // var m = Math.ceil(25.5)
+        // document.write(m)
+        // console.log(m);
+        
+
+        // floor() it will be same in digit it only discard the point value
+    
+        // var m = Math.floor(120.4)
+        // console.log(m);
+        
+
+        // min():to find minimum & max():to find maximum
+
+        // var num =[10,20,30,40,5.5,100,160];
+        // console.log(Math.min(...num)); // spread operator
+        
+        // max()
+        //  var num =[10,20,30,40,5.5,100,160];
+        // console.log(Math.max(...num)); // spread operator
+        
+        
+        // document.write(Math.min(10,20,30,40,5.5,100,160))
+        
+
+        // var num =[10,20,30,40,5.5]
+        // document.write(num+"<br>")
+        // document.write("maximum number is: "+Math.max(num)) // NaN
+        // document.write("maximum number is: "+Math.min(...num))
+
+        // toFixed() : it will only take 3values after dot(.) 
+        var a =12.4134465;
+        console.log(a.toFixed(2));
+        
+        // math random method
+        const fruits = ['apple', 'mango', 'grapes'];
+        let randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+
+        // // // // referesh the browser u will get ranndom fruits
+        console.log('Randomly selected fruit:', randomFruit)
+
+        var name1=["sam"];
+        var name2=["john"];
+        var name3=["william"];
+        var name4=["david"];
+        var name5=["johhnson"];
+
+        // sam john william david johhnson
+        var res = name1.concat(name2,name3,name4,name5);
+        console.log(res);
+
+        console.log(...name1,...name2);
+        
+        
+
+        
+
+        // spread operator
+        
+    </script>
+</body>
+</html>

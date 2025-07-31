@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+
+        // 2) Find Greatest of 3 numbers using Prompt
+
+        let num1=prompt("Enter first number");
+
+        let num2=prompt("Enter second number");
+        let num3=prompt("Enter third number");
+
+
+
+        if(Number(num1)>Number(num2) && Number(num1)>Number(num3) ){
+            console.log("first number is greater",num1);
+        }
+
+        else if(Number(num2)>Number(num1) && Number(num2)>Number(num3)){
+            console.log("second number is greater",num2);
+        }
+
+        else if( Number(num3)>Number(num1) && Number(num3)>Number(num2)){
+            console.log("third number is greater",num3);
+
+        }
+
+        else{
+            console.log("enter proper number");
+        }
+    </script>
+</body>
+</html>

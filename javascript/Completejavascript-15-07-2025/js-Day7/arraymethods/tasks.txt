@@ -1,0 +1,41 @@
+1) In the below given array
+["Alice", "Bob", "Charlie", "David"]
+i want 3data isntead of 4
+
+        var arr = ["Alice", "Bob", "Charlie", "David"];
+        arr = arr.slice(0, 3);
+        console.log(arr)
+
+        or 
+
+        let names = ["Alice", "Bob", "Charlie", "David"];
+        names.length = 3;
+        console.log(names);
+-------------------------------------------------------------------------------------
+
+2)var colors = ["red", "green", "blue"];
+i want all of them to be printed output should be
+red
+green
+blue
+
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+-------------------------------------------------------------------------------------
+3)[10,20,30,40,50] reverse the array
+
+4)["sam","john","rio"],[10,20,30],[true,false] combine the given array
+
+5) [2000,-1,8882,10,20,-70] sort the given number in ascending or descending order
+
+6) let shop = [
+            "shoes","jacket",[
+                10,20,30,[true,10,"jeans"]
+            ],"shirt"
+        ]
+
+in the given array replace jeans with dungrees 
+shop[2][3].splice(2, 1, "dungree");
+        console.log(shop);       
+

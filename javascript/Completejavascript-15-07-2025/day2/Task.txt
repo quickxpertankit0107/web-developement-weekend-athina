@@ -1,0 +1,8 @@
+1) Find even odd using Prompt
+2) Find Greatest of 3 numbers using Prompt
+3) Stone,Paper,Scissor task using Prompt
+
+var num1=prompt("")
+var num2
+var num3
+var Greatest

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Siblings Parent</title>
+    <style>
+        .box{
+         padding: 10px; 
+         margin: 5px; 
+         border: 2px solid gray; 
+         display: inline-block; 
+         }
+        .highlight{ 
+        background-color: yellow; 
+        }
+        .border{ 
+        border: 3px solid red;
+         }
+    </style>
+</head>
+<body>
+
+    <h3>Parent Div</h3>
+    <!-- <div class="box"> -->
+        <div id="child1" class="box">Child 1</div>
+        <div id="child2" class="box">Child 2 (hover me)</div>
+        <div id="child3" class="box">Child 3</div>
+    <!-- </div> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        
+            $("#child2").hover(function(){
+                $(this).siblings().addClass("highlight");
+                $(this).parent().addClass("border");
+            });
+    
+    </script>
+
+</body>
+</html>

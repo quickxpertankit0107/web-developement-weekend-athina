@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Style</title>
+   
+</head>
+<body>
+    <button onclick="show()">click me</button>
+    <p id="para"></p>
+
+    <script>
+        function show(){
+            var text=document.getElementById("para").innerHTML="hello para";
+            var text=document.getElementById("para");
+            text.style.cssText="background:red;color-white; text-transform: uppercase;text-align:center;";
+
+            // text.style.backgroundColor="red";
+            // text.style.fontSize="30px";
+            // text.style.color="blue";
+
+        }
+    </script>
+</body>
+</html>

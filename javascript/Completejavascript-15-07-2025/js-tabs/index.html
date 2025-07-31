@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tabs</title>
+</head>
+<body>
+    <div id="tabs">
+  <div id="tab-buttons">
+    <button style="background-color:#007BFF; color:white;">Tab 1</button>
+    <button>Tab 2</button>
+    <button>Tab 3</button>
+  </div>
+
+  <div style="display:block; border:1px solid #ccc; padding:15px; margin-top:5px;">
+    Content for Tab 1
+  </div>
+  <div style="display:none; border:1px solid #ccc; padding:15px; margin-top:5px;">
+    Content for Tab 2
+  </div>
+  <div style="display:none; border:1px solid #ccc; padding:15px; margin-top:5px;">
+    Content for Tab 3
+  </div>
+</div>
+
+<script>
+  // buttons inside #tab-buttons
+  const buttons = document.querySelectorAll('#tab-buttons button');
+  // all divs inside #tabs but exclude the #tab-buttons container itself
+  const contents = document.querySelectorAll('#tabs > div:not(#tab-buttons)');
+
+  for(let i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+      // Reset all buttons and hide all content
+      for(let j = 0; j < buttons.length; j++) {
+        buttons[j].style.backgroundColor = '';
+        buttons[j].style.color = '';
+        contents[j].style.display = 'none';
+      }
+
+      // highlight current button and show corresponding content
+      buttons[i].style.backgroundColor = '#007BFF';
+      buttons[i].style.color = 'white';
+      contents[i].style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Show/Hide</title>
+</head>
+<body>
+
+<button onclick="toggleContent()">click me</button>
+<div id="content" style="display:none; margin-top:10px;">
+This is the hidden content
+</div>
+
+<script>
+  function toggleContent() {
+    const content = document.getElementById('content');
+    const button = document.querySelector('button');
+
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      // button.textContent = 'Hide';
+    } else {
+      content.style.display = 'none';
+      // button.textContent = 'Show';
+    }
+  }
+</script>
+
+</body>
+</html>

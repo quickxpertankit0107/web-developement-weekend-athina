@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <button onclick="show()">click me</button>
+    <!-- <button onclick="hide()">click me hide</button> -->
+
+    <p id="demo"></p>
+    <!-- <img id="imgAdd"> -->
+    <script>
+        function show() {
+            // let title = document.getElementById("demo").innerHTML="<b>hello quickxpert</b>";
+            let title = document.getElementById("demo").innerText="<b>hello quickxpert</b>";
+
+            console.log(title);
+            // let addImg = document.getElementById("imgAdd");
+            // addImg.setAttribute("src","https://cdn.pixabay.com/photo/2025/04/24/04/58/flowers-9554400_1280.jpg");
+            // addImg.setAttribute("alt","demo img");
+        }
+
+        // function hide() {
+        // let addImg = document.getElementById("imgAdd");
+        // addImg.removeAttribute("src","");
+        // addImg.removeAttribute("alt","");            
+        // }
+
+       
+
+
+    </script>
+</body>
+</html>
